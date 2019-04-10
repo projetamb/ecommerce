@@ -5,13 +5,13 @@ namespace App\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 
-class CategoryController extends AbstractController
+class ContactController extends AbstractController
 {
     /**
-     * @Route("/category", name="category")
+     * @Route("/contact", name="contact")
      */
     public function show()
     {
-        return $this->render('category/category.html.twig');
+        return $this->render('contact/contact.html.twig');
     }
 }
