@@ -12,6 +12,8 @@ class ContactController extends AbstractController
      */
     public function show()
     {
-        return $this->render('contact/contact.html.twig');
+        return $this->render('contact/contact.html.twig',[
+            'titleSite' => "eCommerce"
+        ]);
     }
 }

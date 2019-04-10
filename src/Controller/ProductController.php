@@ -12,8 +12,8 @@ class ProductController extends AbstractController
      */
     public function product()
     {
-        return $this->render('product/product.html.twig', [
-            'controller_name' => 'ProductController',
+        return $this->render('product/product.html.twig',[
+            'titleSite' => "eCommerce"
         ]);
     }
 }
