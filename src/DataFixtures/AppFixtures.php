@@ -5,6 +5,7 @@ namespace App\DataFixtures;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Common\Persistence\ObjectManager;
 use Faker\Factory;
+
 use App\Entity\Product;
 
 class AppFixtures extends Fixture
@@ -27,6 +28,9 @@ class AppFixtures extends Fixture
 
             $manager->persist($product);
         }
+        
+
+        $manager->persist($product);
 
         $manager->flush();
     }
