@@ -18,11 +18,13 @@ class AppFixtures extends Fixture
         for ($i = 1; $i < 100; $i++) {
             $product = new Product();
             $product->setNAme($faker->name);
-            $product->setDescription($faker->description);
-            $product->setPrice($faker->randomNumber(4) * 100);
+            $product->setDescription($faker->text(50));
+            $product->setPrice($faker->randomNumber(3) * 100);
             $product->setPhoto('1');
-            $product->setCategory('zzz');
-            $product->setQuantity('2');
+            $product->setCategory($faker->randomElement([
+                'Lunette', 'Lingerie', 'Téléphone', 'Tondeuse', 'Parfum'
+            ]));
+            $product->setQuantity($faker->randomNumber(2) * 7);
             $product->setHeart('0');
 
             $manager->persist($product);
