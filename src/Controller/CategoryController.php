@@ -12,8 +12,9 @@ class CategoryController extends AbstractController
      */
     public function show()
     {
-        return $this->render('category/category.html.twig',[
+        return $this->render('category/category.html.twig', [
             'titleSite' => "eCommerce"
         ]);
     }
+    
 }
